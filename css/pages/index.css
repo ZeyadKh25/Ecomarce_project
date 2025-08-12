@@ -1,0 +1,160 @@
+/*******************
+    top image main
+********************/
+div.top-img {
+    position: relative;
+    background-image: url('../../images/bac.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (width <1000px) {
+    div.top-img {
+        background-position: left;
+    }
+}
+
+/*******************
+    text on image
+********************/
+section.content {
+    font-size: 2rem;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    margin-inline: 10%;
+
+
+    & .lifestyle {
+        text-transform: uppercase;
+        margin-bottom: 0.8rem;
+    }
+
+
+    & .men {
+        margin-block: 0.8rem;
+    }
+
+    & .men,
+    & .sale {
+        font-weight: bold;
+    }
+
+    & .sale span {
+        color: red;
+        text-transform: capitalize;
+        margin-left: 1rem;
+    }
+
+    & .free-shopping {
+        text-transform: capitalize;
+        font-size: 1.8rem;
+        margin-block: 0.8rem;
+    }
+
+    & button {
+        background-color: black;
+        font-size: 1rem;
+        color: #fff;
+        border-radius: 5px;
+        color: var(--bodyBG);
+        padding: 0.8rem 1.7rem;
+        text-transform: capitalize;
+    }
+}
+
+
+
+main section.product {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 1.4rem;
+
+    & .card {
+        background-color: #fff;
+        border-radius: 10px;
+        width: 366px;
+        transition: 0.21s;
+        box-shadow:
+            rgba(0, 0, 1, 0.2) 0px 2px 1px -1px,
+            rgba(0, 0, 1, 0.14) 0px 1px 1px 0px,
+            rgba(0, 0, 1, 0.12) 0px 1px 3px 0px;
+
+        & img {
+            width: 366px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        & .content {
+            padding: 0 0.4rem 1rem;
+
+
+            & .discription {
+                font-size: 0.8rem;
+                margin-top: 1.5rem;
+                line-height: 1.1rem;
+
+            }
+
+            & .price-cart {
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 1rem;
+                padding-inline: 0.6rem;
+
+                & .price {
+                    color: red;
+                    font-weight: bold;
+                }
+
+                & .add-to-cart {
+                    border-radius: 10px;
+                    padding: 0.5rem 1rem;
+                    color: #fff;
+                    background-color: rgb(59, 59, 214);
+
+                    i {
+                        color: #fff;
+                        padding-right: 0.4rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+    & .card:hover {
+        scale: 1.01;
+    }
+}
+
+@media (width < 400px) {
+    main section.product {
+
+        & .card {
+            width: 266px;
+
+            & img {
+                width: 266px;
+            }
+        }
+    }
+
+    main {
+        width: 100%;
+    }
+}
+
+@media (width < 620px) {
+    main .recommended {
+        margin: 2rem 5%;
+        text-align: center;
+
+    }
+}
+
+
+

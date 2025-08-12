@@ -1,0 +1,179 @@
+header.flex {
+    background-color: var(--footer-bg);
+    color: var(--bodyBG);
+    padding-block: 0.5rem;
+
+    & .logo {
+        transition: 0.2s;
+
+        .fa-solid {
+            font-size: 1.5rem;
+        }
+    }
+
+    & .logo:hover {
+        scale: 0.95;
+        cursor: pointer;
+    }
+
+    & .fa-solid {
+        color: var(--bodyBG);
+    }
+
+    & .links .active {
+        color: var(--blue);
+
+        & i {
+            color: var(--blue);
+        }
+    }
+
+    & .register:hover,
+    & .sign-in:hover,
+    & .cart:hover {
+        border: 0.4px solid var(--white);
+        padding: 0.5rem 1.1rem;
+    }
+
+
+}
+
+
+/********************  
+
+******************/
+main {
+    margin-top: 2rem;
+}
+
+section.cart {
+
+    & article.proudct.flex {
+        border-top: 0.2rem solid var(--blue);
+        border-radius: 5px;
+        justify-content: space-between;
+        font-size: 1.3rem;
+        max-width: 450px;
+        font-weight: 500;
+        margin: auto;
+        box-shadow:
+            rgba(0, 0, 1, 0.2) 0px 2px 1px -1px,
+            rgba(0, 0, 1, 0.14) 0px 1px 1px 0px,
+            rgba(0, 0, 1, 0.12) 0px 1px 3px 0px;
+        margin-top: 2rem;
+
+        & button i {
+            color: tomato;
+            margin-left: 0.9rem;
+        }
+
+        & .qantaty {
+            height: 1.5rem;
+            width: 1.5rem;
+            background-color: blue;
+            color: white;
+            border-radius: 50%;
+            align-items: center;
+            font-size: 1rem;
+            justify-content: center;
+            margin-inline: 0.5rem;
+
+
+        }
+
+        & .decrement,
+        decrement {
+            font-weight: 500;
+            color: blue;
+        }
+    }
+}
+
+
+
+
+main button.clear {
+    margin-inline: auto;
+    margin-block: 1rem;
+    background-color: red;
+    color: var(--white);
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+
+
+    & i {
+        color: var(--white);
+    }
+}
+
+section.summary {
+    margin-top: 2rem;
+    text-transform: capitalize;
+    width: 330px;
+    margin-inline: auto;
+    border-radius: 4px;
+    background-color: var(--white);
+    box-shadow:
+        rgba(0, 0, 1, 0.2) 0px 2px 1px -1px,
+        rgba(0, 0, 1, 0.14) 0px 1px 1px 0px,
+        rgba(0, 0, 1, 0.12) 0px 1px 3px 0px;
+
+
+    & .heding-summary {
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0.9rem;
+        font-weight: 700;
+    }
+
+    & .subTotal {
+        justify-content: space-between;
+        padding: 0.9rem 0.5rem;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 1.2rem;
+
+    }
+
+    & .checkout {
+        background-color: var(--blue);
+        width: 100%;
+        padding: 0.9rem 0;
+        text-align: center;
+        color: var(--white);
+        font-size: 1.2rem;
+        font-weight: 500;
+
+    }
+
+    & .please {
+        text-align: center;
+        color: red;
+        font-size: 1.1rem;
+        padding: 0.9rem 2rem;
+        justify-content: center;
+        text-transform: capitalize;
+    }
+}
+
+@media (width< 455px) {
+    section.cart {
+        & article.proudct.flex {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            gap: 2rem;
+            padding: 1rem;
+            font-size: 1.3rem;
+            justify-content: center;
+
+            & button i {
+                margin: 0;
+            }
+        }
+    }
+
+    section.summary {
+        width: 80%;
+    }
+}

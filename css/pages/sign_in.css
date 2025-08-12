@@ -1,0 +1,66 @@
+main {
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+
+    & form {
+        flex-direction: column;
+        width: 35%;
+
+        & label {
+            width: 100%;
+            color: white;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        & input.input {
+
+            margin-block: 0.4rem 1.5rem;
+            height: 3rem;
+            width: 100%;
+            border-radius: 0.5rem;
+        }
+
+        & div {
+            width: 100%;
+
+            & button {
+                margin-top: 3rem;
+                margin-block: 2rem 0;
+                background-color: blue;
+                color: var(--white);
+                font-size: 1.1rem;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                text-align: center;
+            }
+        }
+
+        & .check {
+            flex-direction: row-reverse;
+            margin-bottom: 1.5rem;
+
+            & input {
+                border: none;
+                height: 1.5rem;
+                width: 1.5rem;
+                margin-right: 1rem;
+                border: 0.1px solid white;
+                border-radius: 1.5rem !important;
+            }
+        }
+    }
+}
+
+@media (width< 1200px) {
+    main>form {
+        width: 65%;
+    }
+}
+
+@media (width< 600px) {
+    main>form {
+        width: 95%;
+    }
+}

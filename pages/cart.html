@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/glopal.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>cart</title>
+    <link rel="stylesheet" href="../css/pages/cart.css">
+</head>
+
+<body style="display: grid;align-items: center; height: 100vh; grid-template-rows: auto 1fr auto;">
+
+    <header class="flex ">
+        <a href="../index.html">
+            <div class="logo">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>ZTK</span>
+                <p>shop aping</p>
+            </div>
+        </a>
+        <div class="links">
+            <a style="position: relative;" class="cart active" href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                $0.00
+                <span class="product-number">5</span>
+            </a>
+            <a class="sign-in" href="siginin.html">
+                <i class="fa-solid fa-user-plus"></i>
+                Sign in</a>
+            <a class="register" href="regester.html">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Register</a>
+        </div>
+    </header>
+    <main class="">
+        <section class="cart">
+            <article class="proudct flex">
+                <button> <i class="fa-solid fa-trash"></i> </button>
+                <p class="pric">$133</p>
+                <div class="flex">
+                    <button class="decrement">-</button>
+                    <p class="qantaty flex">3</p>
+                    <button class="decrement">+</button>
+                </div>
+                <p class="titel">proudct title</p>
+                <img src="../images/4.webp" alt="" style="width: 80px;
+                height: 80px;
+                border-radius: 0.22rem;">
+            </article>
+            <article class="proudct flex">
+                <button> <i class="fa-solid fa-trash"></i> </button>
+                <p class="pric">$133</p>
+                <div class="flex">
+                    <button class="decrement">-</button>
+                    <p class="qantaty flex">3</p>
+                    <button class="decrement">+</button>
+                </div>
+                <p class="titel">proudct title</p>
+                <img src="../images/5.webp" alt="" style="width: 80px;
+                height: 80px;
+                border-radius: 0.22rem;">
+            </article>
+            <article class="proudct flex">
+                <button> <i class="fa-solid fa-trash"></i> </button>
+                <p class="pric">$133</p>
+                <div class="flex">
+                    <button class="decrement">-</button>
+                    <p class="qantaty flex">3</p>
+                    <button class="decrement">+</button>
+                </div>
+                <p class="titel">proudct title</p>
+                <img src="../images/2.webp" alt="" style="width: 80px;
+                height: 80px;
+                border-radius: 0.22rem;">
+            </article>
+
+        </section>
+
+        <button class="clear flex ">
+            <i class="fa-solid fa-trash"></i>
+            Clear Cart</button>
+
+        <section class="summary ">
+            <p class="heding-summary">cart summary</p>
+            <hr>
+            <p class="subTotal flex">subtotal <span>$1999</span></p>
+            <button disabled class="checkout">CHECKOUT</button>
+            <a class="please  flex" href="siginin.html">
+                please sgin in to contnue.
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer flex">
+        <p>Design and develop by <span>ziyad tareq</span> Copyrhigt &copy; 2025.</p>
+    </footer>
+</body>
+
+</html>
