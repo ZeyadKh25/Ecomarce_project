@@ -18,7 +18,7 @@ header.flex {
     & .sign-in,
     & .register,
     & .cart {
-        border: solid 1.5px var(--bodyFont);
+        border: solid 3px var(--bodyFont);
         padding: 0.44rem 1rem;
         border-radius: 55px;
         font-size: 0.8rem;
